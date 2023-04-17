@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Astramus.Worker", "Astramus.Worker\Astramus.Worker.csproj", "{25C2331D-7AB9-4521-8164-D2656D7C8F63}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Astramus.Rabbit.Server", "Astramus.Rabbit.Server\Astramus.Rabbit.Server.csproj", "{77D906A6-D7C0-4C0D-9069-EA5DA1F73E4D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{25C2331D-7AB9-4521-8164-D2656D7C8F63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25C2331D-7AB9-4521-8164-D2656D7C8F63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25C2331D-7AB9-4521-8164-D2656D7C8F63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25C2331D-7AB9-4521-8164-D2656D7C8F63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77D906A6-D7C0-4C0D-9069-EA5DA1F73E4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77D906A6-D7C0-4C0D-9069-EA5DA1F73E4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77D906A6-D7C0-4C0D-9069-EA5DA1F73E4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77D906A6-D7C0-4C0D-9069-EA5DA1F73E4D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

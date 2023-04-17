@@ -1,0 +1,46 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rabbit-local
+spec:
+  selector:
+    matchLabels:
+      app: rabbit-local
+  template:
+    metadata:
+      labels:
+        app: rabbit-local
+    spec:
+      containers:
+      - name: rabbit-local
+        image: rabbitmq:3.11-management
+        resources:
+          limits:
+            memory: "1024Mi"
+            cpu: "1"
+        ports:
+        - containerPort: 5672
+          name: main-non-http
+        - containerPort: 15672
+          name: main-non-http-2
+        - containerPort: 8080
+          name: http
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: rabbit-local
+spec:
+  selector:
+    app: rabbit-local
+  ports:
+  - port: 5672
+    targetPort: 5672
+    name: main-non-http
+  - port: 15672
+    targetPort: 15672
+    name: main-non-http-2
+  - port: 8080
+    targetPort: 8080
+    name: http
+
